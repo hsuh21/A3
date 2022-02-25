@@ -1,33 +1,58 @@
 body, html {
     height: 100%;
     margin: 0;
-    font-family: Arial;
   }
   
-  .tablink {
-    background-color: rgb(179, 150, 94);
-    color: rgb(63, 51, 24);
-    float: left;
-    border: none;
-    outline: none;
-    cursor: pointer;
-    padding: 14px 16px;
-    font-size: 17px;
-    width: 25%;
-  }
+.tablink {
+background-color: rgb(179, 150, 94);
+color: rgb(63, 51, 24);
+float: left;
+border: none;
+outline: none;
+cursor: pointer;
+padding: 14px 16px;
+font-size: 17px;
+width: 25%;
+}
   
-  .tablink:hover {
-    background-color: rgb(158, 134, 86);;
-  }
-  
-  .tabcontent {
-    color: rgb(63, 51, 24);
-    display: none;
-    padding: 100px 20px;
-    height: 100%;
-  }
-  
-  #food {background-color: #F2F6D0}
-  #foodbad {background-color: #D0E1D4;}
-  #travel {background-color: #D9D2B6;}
-  #drawing {background-color: #E4BE9E;}
+.tablink:hover {
+background-color: rgb(158, 134, 86);;
+}
+
+.tabcontent {
+color: rgb(63, 51, 24);
+display: none;
+padding: 100px 20px;
+height: 100%;
+}
+
+#food {background-color: #F2F6D0}
+#foodbad {background-color: #D0E1D4;}
+#travel {background-color: #D9D2B6;}
+#drawing {background-color: #E4BE9E;}
+
+h3 {
+    font-size: 2.5vw;
+}
+.emoji {
+    font-size: 9vw;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 10%;
+}
+
+@media (max-width: 700px){
+    h3 {
+        width: 100%;
+        font-size: 5vw;
+    }
+    .emoji {
+        font-size: 19vw;
+        flex: 1;
+    }
+}
